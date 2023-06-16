@@ -11,7 +11,7 @@ SBC8080-like computer implemented on Tang Nano 9K using light8080 CPU core
 - Communication is 9600baud, 8bit, no parity, 1bit, none.
 - src/mcu/ROM/obj_code_pkg.vhdl is embedded as ROM data from 0000H to 7FFFH. (By default, vhdl generated from MSBAS80.HEX is placed.)
 - For conversion from other HEX files to vhdl,
-See [sbc8080_project/src/mcu/ROM/README_JP.md](sbc8080_project/src/mcu/ROM/README_JP.md).
+See [sbc8080_project/src/mcu/ROM/README.md](sbc8080_project/src/mcu/ROM/README.md).
 - I think that *.vhdl in the ROM folder should be usable as is if renamed to obj_code_pkg.vhdl.
 - S1 and S2 buttons are reset buttons.
 - One of the LEDs blinks at 4Hz, and the others only display a part of the address bus every 1/8, so there is no particular meaning.

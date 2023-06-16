@@ -11,7 +11,7 @@ SBC8080-like computer implemented on Tang Nano 9K using light8080 CPU core
 - 通信は9600baud, 8bit, no parity, 1bit, noneです．
 - src/mcu/ROM/obj_code_pkg.vhdl が0000H〜7FFFHのROMデータとして埋め込まれます．(デフォルトではMSBAS80.HEXから生成したvhdlが置いてあります．)
 - その他のHEXファイルからvhdlへの変換については，
-[sbc8080_project/src/mcu/ROM/README_JP.md](sbc8080_project/src/mcu/ROM/README_JP.md)を参照して下さい．
+[sbc8080_project/src/mcu/ROM/README.jp.md](sbc8080_project/src/mcu/ROM/README.jp.md)を参照して下さい．
 - ROMフォルダにある*.vhdlは，obj_code_pkg.vhdlにリネームすればそのまま使えるはずだと思います．
 - S1, S2ボタンがリセットボタンになっています．
 - LEDは，1つは4Hzで点滅，他は1/8毎にアドレスバスの一部を表示しているだけで特に意味はありません．
