@@ -3,7 +3,7 @@
 --#############################################################################
 -- This program is based on the mcu80 sample codes included in the
 -- light8080 project, and modified to run programs for SBC8080
--- on Tang Nano 9K FPGA board with binary-level compatibility.
+-- on Tang Nano 20K FPGA board with binary-level compatibility.
 -- The UART is implemented in hardwired form, and the 8251 registers are
 -- not implemented.
 --#############################################################################
@@ -63,7 +63,7 @@ entity mcu80 is
 
 --      BAUD_RATE:  integer := 115200; -- UART baud rate
       BAUD_RATE:  integer := 9600; -- UART baud rate
-      CLOCK_FREQ: integer := 27E6  -- Clock rate (27MHz for Tang Nano 9K)
+      CLOCK_FREQ: integer := 27E6  -- Clock rate (27MHz for Tang Nano 20K)
     );
     port (  
       clk:    in  std_logic;
@@ -148,10 +148,10 @@ constant ADDR_PIN    : io_addr_t  := X"04"; -- Input port register
 constant ADDR_POUT   : io_addr_t  := X"06"; -- Output port register 
 
 begin
-  reset  <= (not sw_S1) or (not sw_S2);
+  reset  <= sw_S1 or sw_S2;
 
 -- UART and MCU are connected via intermediate signals uart_*
--- to be able to output to test_o
+-- to be able to output to test_o 
   uart_rxd <= rxd_i;
   txd_o <= uart_txd;
 

@@ -3,7 +3,7 @@
 <Project>
     <Template>FPGA</Template>
     <Version>5</Version>
-    <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
     <FileList>
         <File path="src/light8080.vhdl" type="file.vhdl" enable="1"/>
         <File path="src/light8080_ucode_pkg.vhdl" type="file.vhdl" enable="1"/>
@@ -11,6 +11,7 @@
         <File path="src/mcu/mcu80.vhdl" type="file.vhdl" enable="1"/>
         <File path="src/mcu/mcu80_pkg.vhdl" type="file.vhdl" enable="1"/>
         <File path="src/mcu/mcu80_uart.vhdl" type="file.vhdl" enable="1"/>
-        <File path="src/mcu80_tn9k.cst" type="file.cst" enable="1"/>
+        <File path="src/mcu80_tn20k.cst" type="file.cst" enable="1"/>
+        <File path="src/light8080.sdc" type="file.sdc" enable="1"/>
     </FileList>
 </Project>
