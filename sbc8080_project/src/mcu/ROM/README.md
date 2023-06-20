@@ -1,5 +1,5 @@
 ## What's in this directory
-- README_JP.md: this file
+- README.md: this file
 - bin2vhdl.c: program to generate vhdl from binary files
 - bin2vhdl.exe: bin2vhdl.c compiled with cygwin's gcc
 - MSBAS80.obj_code_pkg.vhdl: vhdl file created from MSBAS80.HEX
